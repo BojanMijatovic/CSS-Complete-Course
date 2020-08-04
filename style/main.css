@@ -1,3 +1,11 @@
-h1 {
-  color: teal;
+body {
+  font-family: 'Baloo Bhaina 2', cursive;
+}
+
+section {
+  background-color: #a50073;
+}
+
+#plans {
+  color: white;
 }
