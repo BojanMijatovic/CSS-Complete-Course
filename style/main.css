@@ -1,11 +1,35 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   font-family: 'Baloo Bhaina 2', cursive;
+  margin: 0;
+  padding: 0;
 }
 
-section {
-  background-color: #a50073;
+#product-overview {
+  background-color: #ff3f9f;
+  color: whitesmoke;
+  height: 528px;
+  width: 100%;
+  padding: 5px;
 }
+
+
 
 #plans {
-  color: white;
+  background-color: #ff3f9f;
+  color: #ffffff;
+}
+
+/*  header */
+.main-header {
+  width: 100%;
+  padding: 8px 16px;
+  background-color: #55e487;
+}
+
+.main-nav__item {
+  display: inline-block;
 }
