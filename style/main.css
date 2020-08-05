@@ -16,8 +16,6 @@ body {
   padding: 5px;
 }
 
-
-
 #plans {
   background-color: #ff3f9f;
   color: #ffffff;
@@ -25,11 +23,43 @@ body {
 
 /*  header */
 .main-header {
+  vertical-align: middle;
   width: 100%;
-  padding: 8px 16px;
+  padding: 5px 16px;
   background-color: #55e487;
+}
+
+.main-logo {
+  vertical-align: middle;
+  display: inline-block;
+}
+
+.main-logo a {
+  text-decoration: none;
+  color: #295739;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.main-nav {
+  display: inline-block;
+  text-align: right;
+  width: calc(100% - 59px);
+}
+
+.main-nav__items {
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
 .main-nav__item {
   display: inline-block;
+  margin: 0 10px;
+}
+
+.main-nav__item a {
+  color: #295739;
+  text-decoration: none;
+  font-weight: 500;
 }
