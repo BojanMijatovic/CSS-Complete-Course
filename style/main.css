@@ -9,7 +9,7 @@ body {
 }
 
 #product-overview {
-  background-color: #ff3f9f;
+  background: url('../images/freedom.jpg');
   color: whitesmoke;
   height: 528px;
   width: 100%;
@@ -41,6 +41,13 @@ body {
   font-size: 20px;
 }
 
+/* 
+  adding  Pseudo-elements --  first letter
+.main-logo::first-letter {
+  color: #ffffff;
+  font-size: 30px;
+} */
+
 .main-nav {
   display: inline-block;
   text-align: right;
@@ -62,4 +69,45 @@ body {
   color: #295739;
   text-decoration: none;
   font-weight: 500;
+  padding: 3px 0;
+}
+
+/* 
+  adding  Pseudo-classes insert something before and after element
+
+.main-nav__item a::before {
+  content: 'before';
+  color: #ff3f9f;
+}
+
+.main-nav__item a::after {
+  content: 'after';
+  color: #ff3f9f;
+} */
+
+.main-nav__item a:hover,
+.main-nav__item a:active {
+  color: #ffffff;
+  border-bottom: solid #ffffff 2px;
+}
+
+.main-nav__item--cta a {
+  color: #ffffff;
+  background-color: #ff3f9f;
+  padding: 5px;
+  border-radius: 10px;
+}
+
+.main-nav__item--cta a:hover,
+.main-nav__item--cta a:active {
+  color: #ff3f9f;
+  background-color: #ffffff;
+  border: none;
+}
+
+/*  section plans */
+
+#plans .section-title {
+  margin: 0;
+  padding: 0;
 }
