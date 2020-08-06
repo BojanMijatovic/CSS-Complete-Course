@@ -126,12 +126,21 @@ body {
 }
 
 .card {
-  background-color: #55e487;
-  color: #161616;
+  background-color: #9ef7bd;
+  color: #173622;
   text-align: center;
   display: inline-block;
   width: 30%;
-  margin: 20px 0;
+  margin: 15px 8px;
   padding: 10px;
   vertical-align: middle;
+  border-radius: 6px;
+}
+
+.card--recommended {
+  background-color: #295739;
+  color: #f8f8f8;
+  font-weight: 800;
+  text-transform: uppercase;
+  box-shadow: #161616 2px 2px 2px 2px;
 }
