@@ -16,10 +16,7 @@ body {
   padding: 5px;
 }
 
-#plans {
-  background-color: #ff3f9f;
-  color: #ffffff;
-}
+
 
 /*  header */
 .main-header {
@@ -43,6 +40,7 @@ body {
 
 /* 
   adding  Pseudo-elements --  first letter
+
 .main-logo::first-letter {
   color: #ffffff;
   font-size: 30px;
@@ -106,8 +104,34 @@ body {
 }
 
 /*  section plans */
+#plans {
+  background-color: #f8f8f8;
+  color: #161616;
+}
+
+#plans p {
+  margin: 0;
+  text-align: center;
+}
+
 
 #plans .section-title {
   margin: 0;
   padding: 0;
+  text-align: center;
+  margin-top: 15px;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 25px;
+}
+
+.card {
+  background-color: #55e487;
+  color: #161616;
+  text-align: center;
+  display: inline-block;
+  width: 30%;
+  margin: 20px 0;
+  padding: 10px;
+  vertical-align: middle;
 }
