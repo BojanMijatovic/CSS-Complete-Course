@@ -1,0 +1,159 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Baloo Bhaina 2', cursive;
+  margin: 0;
+  padding: 0;
+}
+
+#product-overview {
+  background: url('../images/freedom.jpg');
+  color: whitesmoke;
+  height: 528px;
+  width: 100%;
+  padding: 5px;
+}
+
+
+
+/*  header */
+.main-header {
+  vertical-align: middle;
+  width: 100%;
+  padding: 5px 16px;
+  background-color: #55e487;
+}
+
+.main-logo {
+  vertical-align: middle;
+  display: inline-block;
+}
+
+.main-logo a {
+  text-decoration: none;
+  color: #295739;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+/* 
+  adding  Pseudo-elements --  first letter
+
+.main-logo::first-letter {
+  color: #ffffff;
+  font-size: 30px;
+} */
+
+.main-nav {
+  display: inline-block;
+  text-align: right;
+  width: calc(100% - 59px);
+}
+
+.main-nav__items {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.main-nav__item {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+.main-nav__item a {
+  color: #295739;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 3px 0;
+}
+
+/* 
+  adding  Pseudo-classes insert something before and after element
+
+.main-nav__item a::before {
+  content: 'before';
+  color: #ff3f9f;
+}
+
+.main-nav__item a::after {
+  content: 'after';
+  color: #ff3f9f;
+} */
+
+.main-nav__item a:hover,
+.main-nav__item a:active {
+  color: #ffffff;
+  border-bottom: solid #ffffff 2px;
+}
+
+.main-nav__item--cta a {
+  color: #ffffff;
+  background-color: #ff3f9f;
+  padding: 5px;
+  border-radius: 10px;
+  font: inherit;
+}
+
+.main-nav__item--cta a:hover,
+.main-nav__item--cta a:active {
+  color: #ff3f9f;
+  background-color: #ffffff;
+  border: none;
+}
+
+
+/*  buttons */
+
+.card__btn button {
+  color: #295739;
+  background-color: #f8f8f8;
+  border: none;
+  box-shadow: rgba(0, 0, 0, 0.5) 2px 2px 2px 2px;
+  font-weight: 600;
+  border-radius: 8px;
+  font: inherit;
+}
+
+.card__btn button:hover,
+.card__btn button:active {
+  cursor: pointer;
+  color: #f8f8f8;
+  background-color: #295739;
+}
+
+.card__btn button:focus {
+  outline: none;
+}
+
+
+
+/*  footer */
+
+.main-footer {
+  background-color: #161616;
+}
+
+.main-footer ul {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  list-style: none;
+}
+
+.main-footer ul li {
+  display: inline-block;
+  margin: 10px;
+}
+
+.main-footer ul li a {
+  color: #f8f8f8;
+  text-decoration: none;
+}
+
+.main-footer ul li a:hover,
+.main-footer ul li a:active {
+  color: #a0a0a0;
+}

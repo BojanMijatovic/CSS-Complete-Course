@@ -1,256 +1,113 @@
-* {
-  box-sizing: border-box;
-}
-
-body {
-  font-family: 'Baloo Bhaina 2', cursive;
-  margin: 0;
-  padding: 0;
-}
-
-#product-overview {
-  background: url('../images/freedom.jpg');
-  color: whitesmoke;
-  height: 528px;
-  width: 100%;
-  padding: 5px;
-}
+ #product-overview {
+   background: url('../images/freedom.jpg');
+   color: whitesmoke;
+   height: 528px;
+   width: 100%;
+   padding: 5px;
+ }
 
 
 
-/*  header */
-.main-header {
-  vertical-align: middle;
-  width: 100%;
-  padding: 5px 16px;
-  background-color: #55e487;
-}
+ /*  section plans */
+ #plans {
+   background-color: #f8f8f8;
+   color: #161616;
+ }
 
-.main-logo {
-  vertical-align: middle;
-  display: inline-block;
-}
-
-.main-logo a {
-  text-decoration: none;
-  color: #295739;
-  font-weight: bold;
-  font-size: 20px;
-}
-
-/* 
-  adding  Pseudo-elements --  first letter
-
-.main-logo::first-letter {
-  color: #ffffff;
-  font-size: 30px;
-} */
-
-.main-nav {
-  display: inline-block;
-  text-align: right;
-  width: calc(100% - 59px);
-}
-
-.main-nav__items {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-.main-nav__item {
-  display: inline-block;
-  margin: 0 10px;
-}
-
-.main-nav__item a {
-  color: #295739;
-  text-decoration: none;
-  font-weight: 500;
-  padding: 3px 0;
-}
-
-/* 
-  adding  Pseudo-classes insert something before and after element
-
-.main-nav__item a::before {
-  content: 'before';
-  color: #ff3f9f;
-}
-
-.main-nav__item a::after {
-  content: 'after';
-  color: #ff3f9f;
-} */
-
-.main-nav__item a:hover,
-.main-nav__item a:active {
-  color: #ffffff;
-  border-bottom: solid #ffffff 2px;
-}
-
-.main-nav__item--cta a {
-  color: #ffffff;
-  background-color: #ff3f9f;
-  padding: 5px;
-  border-radius: 10px;
-  font: inherit;
-}
-
-.main-nav__item--cta a:hover,
-.main-nav__item--cta a:active {
-  color: #ff3f9f;
-  background-color: #ffffff;
-  border: none;
-}
-
-/*  section plans */
-#plans {
-  background-color: #f8f8f8;
-  color: #161616;
-}
-
-#plans p {
-  margin: 0;
-  text-align: center;
-}
+ #plans p {
+   margin: 0;
+   text-align: center;
+ }
 
 
-.section-title {
-  margin: 0;
-  padding: 0;
-  text-align: center;
-  margin-top: 15px;
-  font-weight: 600;
-  text-transform: uppercase;
-  font-size: 25px;
-}
+ .section-title {
+   margin: 0;
+   padding: 0;
+   text-align: center;
+   margin-top: 15px;
+   font-weight: 600;
+   text-transform: uppercase;
+   font-size: 25px;
+ }
 
-.card {
-  background-color: #9ef7bd;
-  color: #173622;
-  text-align: center;
-  display: inline-block;
-  width: 30%;
-  margin: 15px 8px;
-  padding: 10px;
-  vertical-align: middle;
-  border-radius: 6px;
+ .cards {
+   text-align: center;
+ }
 
-}
+ .card {
+   background-color: #9ef7bd;
+   color: #173622;
+   text-align: center;
+   display: inline-block;
+   width: 30%;
+   margin: 15px 8px;
+   padding: 10px;
+   vertical-align: middle;
+   border-radius: 6px;
 
-.card--recommended {
-  background-color: #295739;
-  color: #f8f8f8;
-  font-weight: 800;
-  text-transform: uppercase;
-  box-shadow: #161616 2px 2px 2px 2px;
-}
+ }
 
-.card__price {
-  margin: 0;
-  font-size: 20px;
-}
+ .card--recommended {
+   background-color: #295739;
+   color: #f8f8f8;
+   font-weight: 800;
+   text-transform: uppercase;
+   box-shadow: #161616 2px 2px 2px 2px;
+ }
 
-.card__description {
-  margin: 0;
-}
+ .card__price {
+   margin: 0;
+   font-size: 20px;
+ }
 
-.card__list {
-  list-style: none;
-  margin: 10px 0 15px 0;
-  padding: 0;
-}
+ .card__description {
+   margin: 0;
+ }
 
-/*  buttons */
-
-.card__btn button {
-  color: #295739;
-  background-color: #f8f8f8;
-  border: none;
-  box-shadow: rgba(0, 0, 0, 0.5) 2px 2px 2px 2px;
-  font-weight: 600;
-  border-radius: 8px;
-  font: inherit;
-}
-
-.card__btn button:hover,
-.card__btn button:active {
-  cursor: pointer;
-  color: #f8f8f8;
-  background-color: #295739;
-}
-
-.card__btn button:focus {
-  outline: none;
-}
-
-/*  section features */
-
-#features {
-  background-color: #ff8282;
-  margin-top: 10px;
-}
-
-#features .section-title {
-  color: #f8f8f8;
-  padding-top: 30px;
-  margin: 0;
-}
-
-.features__image {
-  background-color: #173622;
-  border-radius: 50%;
-  width: 128px;
-  height: 128px;
-  margin: auto;
-}
-
-.features__list {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-.features__list--item {
-  display: inline-block;
-  width: 30%;
-  text-align: center;
-}
-
-.features__list--item p {
-  color: #f8f8f8;
-  font-size: 18px;
-  font-weight: 500;
-  text-align: center;
-}
+ .card__list {
+   list-style: none;
+   margin: 10px 0 15px 0;
+   padding: 0;
+ }
 
 
 
-/*  footer */
+ /*  section features */
 
-.main-footer {
-  background-color: #161616;
-}
+ #features {
+   background-color: #ff8282;
+   margin-top: 10px;
+ }
 
-.main-footer ul {
-  margin: 0;
-  padding: 0;
-  text-align: center;
-  list-style: none;
-}
+ #features .section-title {
+   color: #f8f8f8;
+   padding-top: 30px;
+   margin: 0;
+ }
 
-.main-footer ul li {
-  display: inline-block;
-  margin: 10px;
-}
+ .features__image {
+   background-color: #173622;
+   border-radius: 50%;
+   width: 128px;
+   height: 128px;
+   margin: auto;
+ }
 
-.main-footer ul li a {
-  color: #f8f8f8;
-  text-decoration: none;
-}
+ .features__list {
+   margin: 0;
+   padding: 0;
+   list-style: none;
+ }
 
-.main-footer ul li a:hover,
-.main-footer ul li a:active {
-  color: #a0a0a0;
-}
+ .features__list--item {
+   display: inline-block;
+   width: 30%;
+   text-align: center;
+ }
+
+ .features__list--item p {
+   color: #f8f8f8;
+   font-size: 18px;
+   font-weight: 500;
+   text-align: center;
+ }
