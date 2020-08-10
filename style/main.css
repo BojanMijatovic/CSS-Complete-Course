@@ -1,10 +1,9 @@
  /*  product section */
-
  #product-overview {
-   background: url('../images/freedom.jpg');
+
+   /*  shortcut for image position */
+   background: url('../images/freedom.jpg') left 10% bottom 70% /cover no-repeat;
    background-size: cover;
-   background-repeat: no-repeat;
-   background-position: left 30% bottom 20%;
    color: whitesmoke;
    height: 528px;
    width: 100%;
