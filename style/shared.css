@@ -8,15 +8,6 @@ body {
   padding: 0;
 }
 
-#product-overview {
-  background: url('../images/freedom.jpg');
-  color: whitesmoke;
-  height: 528px;
-  width: 100%;
-  padding: 5px;
-}
-
-
 
 /*  header */
 .main-header {
@@ -24,6 +15,9 @@ body {
   width: 100%;
   padding: 5px 16px;
   background-color: #55e487;
+  position: fixed;
+  top: 0;
+  z-index: 1;
 }
 
 .main-logo {
@@ -112,7 +106,7 @@ body {
   background-color: #f8f8f8;
   border: none;
   box-shadow: rgba(0, 0, 0, 0.5) 2px 2px 2px 2px;
-  font-weight: 600;
+  font-weight: bold;
   border-radius: 8px;
   font: inherit;
 }

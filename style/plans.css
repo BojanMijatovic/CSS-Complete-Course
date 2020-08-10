@@ -1,12 +1,21 @@
+.background__image {
+  background: url('../images/plans-background.jpg');
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: -1;
+}
+
 /* section plus */
 #plus {
   background-color: #caeeda;
   width: 80%;
+  position: relative;
 }
 
 section {
   border: 4px solid #133522;
-  margin: 20px 0;
+  margin-top: 50px;
   border-left: none;
 }
 
@@ -23,6 +32,19 @@ section a {
   color: #181818;
   text-decoration: none;
   margin: 15px;
+}
+
+.package__badge {
+  position: absolute;
+  top: 0;
+  right: 20px;
+  margin: 10px;
+  color: #f3f3f3;
+  background-color: #ff5656;
+  padding: 8px;
+  border-radius: 6px;
+  text-transform: uppercase;
+  font-size: 14px;
 }
 
 .section__subtitle {
