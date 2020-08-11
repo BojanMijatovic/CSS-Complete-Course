@@ -2,7 +2,7 @@
  #product-overview {
 
    /*  shortcut for image position */
-   background: url('../images/freedom.jpg') left 10% bottom 70% /cover no-repeat;
+   background: linear-gradient(to top, rgba(0, 0, 0, 0.4) 10%, transparent), url('../images/freedom.jpg') left 10% bottom 70% /cover no-repeat, #cfcfcf;
    background-size: cover;
    color: whitesmoke;
    height: 528px;
