@@ -2,6 +2,12 @@
   box-sizing: border-box;
 }
 
+html {
+  /* font-size: 62.5%; */
+  /* font-size 1em = 10px on default browser settings */
+}
+
+
 body {
   font-family: 'Baloo Bhaina 2', cursive;
   margin: 0;
@@ -57,7 +63,8 @@ body {
   margin: 0 10px;
 }
 
-.main-nav__item a {
+.main-nav__item a,
+.mobile-nav__item a {
   color: #295739;
   text-decoration: none;
   font-weight: 500;
@@ -83,7 +90,8 @@ body {
   border-bottom: solid #ffffff 2px;
 }
 
-.main-nav__item--cta a {
+.main-nav__item--cta a,
+.mobile-nav__item--cta a {
   color: #ffffff;
   background-color: #ff3f9f;
   padding: 5px;
@@ -96,6 +104,36 @@ body {
   color: #ff3f9f;
   background-color: #ffffff;
   border: none;
+}
+
+
+/*  mobile nav*/
+.mobile-nav {
+  display: none;
+  position: fixed;
+  z-index: 101;
+  top: 0;
+  left: 0;
+  background: white;
+  width: 80%;
+  height: 100vh;
+}
+
+.mobile-nav__items {
+  width: 90%;
+  height: 100%;
+  list-style: none;
+  margin: 10% auto;
+  padding: 0;
+  text-align: center;
+}
+
+.mobile-nav__item {
+  margin: 1rem 0;
+}
+
+.mobile-nav__item a {
+  font-size: 1.5rem;
 }
 
 
@@ -150,4 +188,17 @@ body {
 .main-footer ul li a:hover,
 .main-footer ul li a:active {
   color: #a0a0a0;
+}
+
+
+/* backdrop */
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 5;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
+  display: none;
 }
